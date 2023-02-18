@@ -1,0 +1,29 @@
+@mixin pagesList (
+    $width:null,
+    $height:null,
+    $list_style:null, 
+    $background_color:null,
+    $padding:null,
+    $position:null,
+    $top:null,
+    $right:null,
+    $display:null,
+    $flex_d:null,
+    $js_content:null,
+    $aligin_itms:null,
+    $gap:null,
+){
+ width:$width;
+ height:$height;
+ list-style:$list_style;
+ background-color:$background_color;
+ padding:$padding;
+ position:$position;
+ top:$top;
+ right:$right;
+ display:$display;
+ flex-direction:$flex_d;
+ justify-content: $js_content;
+ align-items:$aligin_itms;
+ gap:$gap;
+}

@@ -1,0 +1,173 @@
+#about_us{
+    width: 100%;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    .items{
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: $fonts_color1;
+            text-align: center;
+        }
+        p{
+            font-family: 'Lora', serif;
+            font-size: 17px;
+            color: rgb(59, 59, 59);
+            text-align: center;
+
+        }
+
+    }
+}
+#about{
+    width: 100%;
+    padding: 50px;
+    background-color: #f7f7f7;
+    .col-lg-6{
+        .video_items{
+            position: relative;
+            width: 650px;
+            height: 420px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width:768px){
+                width: 100%;
+              }
+            @media (max-width:645px){
+                width: 480px;
+                height: 360px;
+              }
+            img{
+                width: 650px;
+                height: 420px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+            }
+            i{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                font-size: 150px;
+                color: red;
+                cursor: pointer;
+                width: 650px;
+                height: 420px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: all 1.5s ease-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .col-lg-6{
+        .text{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1{
+                font-size: 38px;
+                font-family: 'Playfair Display', serif;
+                font-weight: 300;
+                span{
+                    color: red;
+                }
+            }
+            p{
+                font-family: 'Playfair Display', serif;
+                color: #6d6a6a;
+                font-size: 17px;
+                line-height: 29px;
+            }
+            img{
+                width: 197px;
+            }
+    
+        }
+    }
+}
+#flowers_expert{
+    width: 100%;
+    margin: 50px 0px;
+    .text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 38px;
+            font-family: 'Playfair Display', serif;
+
+        }
+        p{
+            font-family: 'Lora', serif;
+            font-size: 17px;
+            color: $fonts_color3;
+            text-align: center;
+
+        }
+    }
+    .col-lg-3{
+        .expert_items{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            h1{
+                font-size: 12px;
+
+            }
+            p{
+                font-size: 12px;
+                color: #6d6a6a;
+                margin: -10px 0px;
+
+            }
+        }
+    }
+
+}
+#faq_items{
+    width: 100%;
+    margin: 50px 0px;
+    #carouselExampleIndicators{
+        .carousel-inner{
+            .carousel-item{
+                .person{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 77px;
+                    }
+                  }
+                h1{
+                    font-family: 'Lora', serif;
+                    font-size: 24px;
+                    color: $fonts_color3;
+                    text-align: center;
+                  }
+                p{
+                    font-family: 'Lora', serif;
+                    font-size: 16px;
+                    color: $fonts_color3;
+                    text-align: center;
+                }
+            }
+        }
+        button{
+            span{
+                background-color: #f8f8f8;;
+            }
+        }
+    }
+}

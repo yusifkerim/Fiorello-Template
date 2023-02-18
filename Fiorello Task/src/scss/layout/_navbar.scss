@@ -1,0 +1,223 @@
+#navbar{
+  background-color: white;
+  width: 100%;
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 115px;
+    .logo{
+      width: 212px;
+    }
+    .bi-list{
+      font-size: 40px;
+      color: $fonts_color2;
+      display: none;
+      @media (max-width:768px){
+        display: flex;
+      }
+    }
+    .mobil_menu{
+      position: absolute;
+      right: 0;
+      top: 0px;
+      width: 420px;
+      height: 880px;
+      background-color: rgb(251, 251, 251);
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      z-index: 2;
+
+      .bi-x-circle{
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        color: $fonts_color2;
+      }
+      a{
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        background:
+        linear-gradient(
+        to right,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+        ),
+        linear-gradient(
+        to right,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(0, 0, 0)
+        );
+        background-size: 100% 1.5px, 0 1.5px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+        &:hover {
+          background-size: 0 1.5px, 100% 1.5px;
+        }
+      }
+    }
+    .right{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      @media (max-width:768px){
+        display: none;
+      }
+      .menu_list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        z-index: 2;
+        li{
+          a{
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+            background:
+            linear-gradient(
+            to right,
+          rgb(255, 255, 255),
+          rgb(255, 255, 255)
+            ),
+            linear-gradient(
+            to right,
+          rgb(0, 0, 0),
+          rgb(0, 0, 0),
+          rgb(0, 0, 0)
+            );
+            background-size: 100% 1.5px, 0 1.5px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
+            &:hover {
+              background-size: 0 1.5px, 100% 1.5px;
+            }
+          }
+        }
+        .home{
+          position: relative;
+          .home_list{
+            @include pagesList(214px, 280px, none, white, 29px, absolute, 78px, -92px, none, column, center, center, 10px);
+           }
+        }
+        .pages{
+          position: relative;
+          .pages_list{
+            @include pagesList(214px, 150px, none, white, 29px, absolute, 78px, -92px, none, column, center, center, 10px);
+           }
+        }
+        .shop{
+          position: relative;
+          .shop_flex{
+            @include pagesList(1000px, 300px, none, white, 13px, absolute, 78px, -400px, none, row, center, flex-start, 40px);
+             .product_types{
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              h1{
+                font-size: 24px;
+              }
+             }
+             .shop_pages{
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              h1{
+                font-size: 24px;
+              }
+             }
+             .shop_types{
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              h1{
+                font-size: 24px;
+              }
+             }
+             .shop_layouts{
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 5px;
+              h1{
+                font-size: 24px;
+              }
+             }
+           }
+        }
+        .portfolio{
+          position: relative;
+          .portfolio_list{
+            @include pagesList(214px, 210px, none, white, 29px, absolute, 78px, -68px, none, column, center, center, 10px);
+           }
+        }
+        .blog{
+          position: relative;
+          .blog_list{
+            @include pagesList(190px, 140px, none, white, 29px, absolute, 78px, -80px, none, column, center, center, 10px);
+           }
+        }
+        .elements{
+            position: relative;
+       
+         .elements_list{
+          @include pagesList(200px, 180px, none, white, 29px, absolute, 78px, -60px, none, column, center, center, 10px);
+         }
+        }
+      }
+      .icons{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        li{
+          position: relative;
+          .bi-search{
+           cursor: pointer;
+           &:hover{
+            color: $fonts_color2;
+           }
+
+          }
+          .search_input{
+            position: absolute;
+            top: 78px;
+            right: -80px;
+            width: 260px;
+            height: 44px;
+            padding: 5px;
+            border: none;
+            background-color: white;
+            display: none;
+            z-index: 2;
+          }
+        }
+        li{
+          a{
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

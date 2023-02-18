@@ -1,0 +1,96 @@
+#faq{
+    width: 100%;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    .items{
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        p{
+            font-family: 'Lora', serif;
+            font-size: 17px;
+            color: rgb(59, 59, 59);
+            text-align: center;
+
+        }
+
+    }
+}
+#faq_items{
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .text{
+            @media (max-width:768px){
+                text-align: center;
+                }
+            h1{
+                color: black;
+                font-size: 12px;
+                font-family: 'Montserrat', sans-serif;
+            }
+           ul{
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #8b8b8b;
+                    font-size: 12px;
+                    font-family: 'Montserrat', sans-serif;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+           }
+        }
+        .search{
+            input{
+                width: 300px;
+                height: 50px;
+                font-size: 12px;
+                font-family: 'Montserrat', sans-serif;
+                padding: 5px;
+                border: 1px solid #8b8b8b ;
+            }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width:768px){
+            text-align: center;
+            }
+        .question{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1{
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+                color: rgb(0, 0, 0);
+                span{
+                    font-family: 'Playfair Display', serif;
+                    font-size: 30px;
+                    color: red;
+                }
+            }
+            p{
+                font-family: 'Lora', serif;
+                font-size: 15px;
+                color: grey;
+
+            }
+        }
+    }
+
+}

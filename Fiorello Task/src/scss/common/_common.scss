@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#yakor{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 30px;
+    color: #f34f3f;
+    &:hover{
+        color: rgb(215, 52, 52)
+    }
+}
